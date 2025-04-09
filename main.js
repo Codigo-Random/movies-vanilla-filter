@@ -5,7 +5,7 @@ let language = "es-ES"
 
 let page = 0
 
-const list = document.getElementById("list");    
+const list = document.getElementById("list")
 
 function getMovies(restart = false) {
     if(!restart) {
