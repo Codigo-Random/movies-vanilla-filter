@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+
+    <select name="language" id="language" class="block my-12 font-bold py-2 px-4 rounded mx-auto min-w-[200px]">
+        <option value="es-ES" selected>Spanish</option>
+      <option value="en-US">English</option>
+      <option value="fr-FR">French</option>
+      <option value="de-DE">German</option>
+      <option value="it-IT">Italian</option>
+      <option value="pt-BR">Portuguese</option>
+    </select>
+
+    <div id="list" class="p-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Movies will be inserted here by JavaScript -->
+        
+    </div>
+
+    <button class="bg-blue-500 hover:bg-blue-700 text-white block my-12 font-bold py-2 px-4 rounded mx-auto min-w-[200px]" onclick="getMovies()">More</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
